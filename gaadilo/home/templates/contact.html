@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaadilo</title>
+    <style>
+
+#r {
+    padding:20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+
+{% block body %}
+<body>
+ <div>Contact us Form</div>
+
+    <form id="r" method="post" action="/contact">
+    {% csrf_token %}
+
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name."><br>
+
+          <label for="phone" class="form-label">Contact Number</label>
+          <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter your mobile number." ><br>
+
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"><br>
+
+          <label for="desc" class="form-label">Tell me about your query.</label>
+          <textarea class="form-control" id="desc" name="desc" rows="3"></textarea><br>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+ </body>
+{% endblock body %}
+
+</html>

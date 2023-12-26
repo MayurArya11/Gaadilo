@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+
+
+
+</head>
+
+<body class="text-center">
+    <form method="POST">
+        {% csrf_token %}
+        <h2>Login</h2>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter Username" id="username" name="username"><br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Password" id="password" name="pass"><br>
+
+        <button type="submit">Log In</button><br>
+
+        <a href={% url 'signup' %}>Create an account.</a>
+
+    </form>
+</body>
+
+</html>

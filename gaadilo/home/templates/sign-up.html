@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" contect="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <title>SignUp</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class = "container">
+        <h1>Sign Up</h1>
+        <hr>
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required><br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+
+        <label for="password1"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password1" id="password1" required><br>
+
+        <label for="password2"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="password2" id="password2" required><br>
+        <hr>
+
+        <button type="submit" class="btn btn-primary">SignUp</button><br>
+
+        <a href="login">I have already account.</a>
+    </div>
+</form>
+</body>
+</html>

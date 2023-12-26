@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Home{% endblock %}</title>
+
+<style>
+.i{
+   width:100%;
+   height:600px;
+   text-align: left;
+   padding:100px;
+}
+
+#m {
+    background-image: url("{% static 'Images/home1.jpg' %} ");
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:500px;
+ }
+
+
+</style>
+</head>
+{% block body %}
+<body>
+<div id="m">
+<div class="i">
+<p><h2><span style="color:yellow">Make your travel easy with us, anytime anywhere.</h2></p>
+    <p>Zoomcar is the leading marketplace for car sharing in emerging markets,with over 20,000 cars on its technology-driven platform across India, Indonesia, and Egypt. Zoomcar empowers host entrepreneurs to safely and easily share their cars to earn additional passive income. Guests in the Zoomcar community enjoy a diverse, affordable selection of cars to unlock memorable driving experiences with friends and family. Founded in 2013 and headquartered in Bengaluru, India, Zoomcar employs over 250 people and operates in over 45 cities across India, Indonesia, and Egypt. Uri Levine, the co-founder of mobility unicorns Waze and Moovit, currently serves as Zoomcar's Chairman of the Board.
+
+Zoom through Mumbai and beyond
+Don't let the chaos of public transportation or the uncertainty of kaali-peeli ruin your Mumbai experience. Whether you’re A Mumbaikar or just visiting, the joys of exploring the city and beyond on your own is a different experience altogether. And even more so if it’s in a rental car hosted by Zoomcar.
+
+Say goodbye to the stress of navigating the bustling streets of Mumbai on foot or relying on crowded public transport or expensive cabs. Enjoy the flexibility of exploring Mumbai's famous landmarks, popular eateries, and cultural hotspots or just travelling to the airport with a self drive car. So, say goodbye to the mundane and hello to a thrilling driving adventure with Zoomcar.
+
+Zoom in and book now!
+
+Want A Specific Car? We've Got It All:
+Rent Tata Nexon | Rent Honda Jazz | Rent Hyundai Creta | Rent Maruti Brezza | Rent Mahindra | Rent XUV500 | Rent Hyundai Verna | Rent Maruti Swift | Rent Toyota Innova | Rent Reanult Kwid | Rent Maruti Baleno | Rent Mahindra TUV300| Rent Maruti Swift | Rent Hyundai i20 | Rent Maruti Ertiga | Rent Volkswagen Polo | Rent Hyundai Venue | Rent Hyundai Eon | Rent Maruti S-Cross | Rent Maruti | Rent Dzire | Rent Honda Amaze | Rent Hyundai Verna | Rent Maruti Ciaz | Rent Hyundai Creta | Rent Renault Triber | Rent Maruti S-Cross | Rent Toyota Innova | Rent Mahindra TUV300 | Rent Tata Tiago | Rent Maruti Wagon R | Rent Datson Redi-Go | Rent Maruti Alto | Rent Hyundai Grand i10 | Rent Hyundai Xcent | Rent Maruti S-Presso | Rent Hyundai Santro | Rent Hyundai Verna | Rent Maruti Ignis | Rent Nissan Magnite | Rent Toyota Glanza | Rent Honda City | Rent Maruti Dzire | Rent Datson GO T | Rent Nissan Sunny | Rent Renault Kiger | Rent Hyundai Aura | Rent Renault Duster | Rent Mahindra Bolero | Rent Tata Altroz | Rent Ford EcoSport
+
+If you're looking for cars to rent near you, Zoomcar is your perfect solution! Rent cars in 3 easy steps: Pick your date & time of travel Select the vehicle of your choice from our wide range of cars Book & zoom away</p>
+    <button onclick="service">BOOK YOUR RIDE NOW</button>
+</div>
+</div>
+</body>
+{% endblock body %}
+</html>
